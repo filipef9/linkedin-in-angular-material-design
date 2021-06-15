@@ -1,16 +1,9 @@
 image:
   file: .gitpod.Dockerfile
- 
-tasks:
-  - command: >
-    npm i -g @angular/cli@6.1.2 &&
-    ng analytics off &&
-    npm i -g typescript@2.7.1 &&
-    npm i -g eslint
 
-# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 4200
+  - port: 4200 # Angular App
     onOpen: open-preview
 
 vscode:
@@ -19,4 +12,3 @@ vscode:
     - vscode-icons-team.vscode-icons
     - dbaeumer.vscode-eslint
     - coenraads.bracket-pair-colorizer
-    
